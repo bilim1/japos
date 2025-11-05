@@ -68,7 +68,7 @@ export default function ShopScene({ children, cashRegister }: ShopSceneProps) {
         </div>
       </div>
 
-      <div className="absolute right-4 md:left-1/4 top-1/2 transform -translate-y-1/2 md:-translate-x-20 z-10">
+      <div className="absolute left-2 md:left-1/4 top-1/2 transform -translate-y-1/2 md:-translate-x-20 z-10">
         {children}
       </div>
     </div>
