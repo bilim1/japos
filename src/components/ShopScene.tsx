@@ -35,27 +35,6 @@ export default function ShopScene({ children, cashRegister }: ShopSceneProps) {
         <div className="absolute bottom-0 left-0 right-0 h-8 md:h-12 bg-orange-900 border-t-2 md:border-t-4 border-orange-950" />
       </div>
 
-      <div className="absolute top-20 md:top-32 left-10 md:left-8 z-20">
-        <div className={`bg-white rounded-lg md:rounded-xl shadow-lg p-2 md:p-4 border-2 md:border-4 transition-all duration-300 ${
-          isAnimating
-            ? changeType === 'increase'
-              ? 'border-green-500 scale-110'
-              : 'border-red-500 scale-90'
-            : 'border-green-500 scale-100'
-        }`}>
-          <div className="text-center">
-            <div className="text-2xl md:text-3xl mb-2">💰</div>
-            <div className="text-xs text-gray-600">Касса</div>
-            <div className={`text-lg md:text-xl font-bold transition-colors ${
-              isAnimating
-                ? changeType === 'increase'
-                  ? 'text-green-600'
-                  : 'text-red-600'
-                : 'text-green-600'
-            }`}>{cashRegister}₽</div>
-          </div>
-        </div>
-      </div>
 
       <div className="absolute top-20 md:top-32 right-2 md:right-8">
         <div className="space-y-1 md:space-y-2">
